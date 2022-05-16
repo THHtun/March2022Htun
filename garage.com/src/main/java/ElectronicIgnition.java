@@ -10,4 +10,8 @@ public class ElectronicIgnition implements IIgnition {
 	public boolean getIsOn() {
 		return this.IsOn;
 	}
+
+	
+
+
 }

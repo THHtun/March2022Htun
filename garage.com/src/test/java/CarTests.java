@@ -21,7 +21,7 @@ public class CarTests {
 
 		String actualModel = car.getModel();
 
-		assertEquals(actualModel, Car.getModel() , "");
+		assertEquals(actualModel, Car.getModel() , "It did not return the correct model name");
 	}
 
 	@Test
@@ -30,6 +30,6 @@ public class CarTests {
 
 		boolean isStarted = car.getIsStarted();
 
-		assertTrue(isStarted, "");
+		assertTrue(isStarted, "The method did not return the correct boolean values");
 	}
 }

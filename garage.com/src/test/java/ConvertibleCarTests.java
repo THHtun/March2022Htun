@@ -23,7 +23,7 @@ public class ConvertibleCarTests {
 
 		String actualModel = car.getModel();
 
-		assertEquals(actualModel, Car.getModel() , "");
+		assertEquals(actualModel, Car.getModel() , "Did not return the correct model name");
 	}
 
 	@Test
@@ -32,16 +32,26 @@ public class ConvertibleCarTests {
 		
 		boolean isStarted = car.getIsStarted();
 
-		assertTrue(isStarted, "");
+		assertTrue(isStarted, "Did not return the correct boolean");
 	}
 
 	@Test
 	public void canLowerTop() {
-		fail("not implemented yet");
+		ConvertibleCar car = this.Car;
+		
+		boolean toplowered = car.getToplowered();
+
+		assertTrue(toplowered , "toplowered boolean did not return true");
 	}
 
 	@Test
 	public void canRaiseTop() {
-		fail("not implemented yet");
+		ConvertibleCar car = this.Car;
+		
+		boolean topRaised = car.getTopRaised();
+
+		assertTrue(topRaised , "topRaised boolean did not return true");
+		
+		
 	}
 }
